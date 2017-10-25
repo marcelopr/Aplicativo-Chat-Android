@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26232a</color>
+    <color name="colorPrimaryDark">#1d1a20</color>
+    <color name="colorAccent">#ad71df</color>
+
+    <color name="cinzaFonte">#756b79</color>
+    <color name="cinzaClaro">#3a363f</color>
+
+    <color name="vermelho">#e87878</color>
+    <color name="verde">#78e898</color>
+    <color name="fundo_perfil">#eef6f8</color>
+    <color name="cinza">#dadada</color>
+    <color name="cinza_escuro">#7e7d7d</color>
+
+</resources>

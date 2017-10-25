@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.celosoft.fastchat.StartActivity">
+
+    <ImageView
+        android:src="@drawable/img_start_et"
+        android:layout_width="210dp"
+        android:layout_gravity="center"
+        android:layout_height="260dp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:id="@+id/login_email">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:id="@+id/editText"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:id="@+id/login_password">
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:textSize="16sp"
+            android:id="@+id/editText2" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageButton
+        android:src="@drawable/ic_check_white"
+        android:background="@drawable/shape_ring_circle"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/login_btn" />
+
+
+    <Button
+        android:text="Criar conta"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:textSize="10dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/start_reg_btn" />
+
+</LinearLayout>

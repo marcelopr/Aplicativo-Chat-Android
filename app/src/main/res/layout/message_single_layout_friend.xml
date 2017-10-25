@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/message_single_layout">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginStart="5dp"-->
+        <!--android:padding="2dp"-->
+        <!--android:id="@+id/message_profile_layout"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignBaseline="@id/message_text_layout"/>-->
+
+    <TextView
+        android:id="@+id/message_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:textSize="13sp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/shape_message_friend"
+        android:textColor="@android:color/white"
+        android:text="Mensagem"
+        android:padding="15dp"
+        android:layout_below="@+id/name_text_layout"
+        android:layout_toEndOf="@+id/message_profile_layout" />
+
+    <TextView
+        android:id="@+id/time_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02:30"
+        android:textSize="8sp"
+        android:textColor="@color/cinzaFonte"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/message_text_layout"
+        android:layout_alignStart="@+id/message_text_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/chat_image"
+        android:src="@drawable/default__user"
+        />
+
+    <TextView
+        android:text="Nome"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chat_image"
+        android:layout_toEndOf="@+id/chat_image"
+        android:id="@+id/chat_single_name"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/chat_last_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cinzaFonte"
+        android:maxLines="1"
+        android:text="Message"
+        android:textSize="13sp"
+        android:maxLength="25"
+        android:layout_alignStart="@id/chat_single_name"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/chat_single_name"/>
+
+    <ImageView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignTop="@+id/chat_image"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/shape_solid"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/chat_single_online_icon"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageView
+        android:id="@+id/chat_seen_icon"
+        android:background="@android:color/transparent"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:visibility="visible"
+        android:layout_below="@+id/chat_single_name"
+        android:layout_toEndOf="@+id/chat_last_message" />
+
+    <TextView
+        android:id="@+id/chat_3dots"
+        android:visibility="gone"
+        android:textColor="@color/cinzaFonte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chat_last_message"
+        android:layout_toRightOf="@id/chat_last_message"
+        android:layout_toEndOf="@+id/chat_last_message"
+        android:text="..." />
+
+</RelativeLayout>

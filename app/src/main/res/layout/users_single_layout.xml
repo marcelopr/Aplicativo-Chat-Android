@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/chat_image"
+        android:src="@drawable/default__user"
+        />
+
+    <TextView
+        android:text="Nome"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chat_image"
+        android:layout_toEndOf="@+id/chat_image"
+        android:layout_marginStart="8dp"
+        android:id="@+id/chat_single_name"
+        android:maxLines="1"/>
+
+    <TextView
+        android:text="Status"
+        android:paddingEnd="20dp"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_single_name"
+        android:layout_toEndOf="@+id/chat_image"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/cinzaFonte"
+        android:maxLines="2"
+        android:id="@+id/user_single_status" />
+
+    <ImageView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignTop="@+id/chat_image"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/shape_solid"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/user_single_online_icon"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
